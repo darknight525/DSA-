@@ -8,6 +8,4 @@ class Solution(object):
             else:
                 non_div+=i
         
-        return  non_div - div
-
-       
+        return non_div - div
