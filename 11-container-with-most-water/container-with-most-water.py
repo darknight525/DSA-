@@ -1,10 +1,10 @@
 class Solution:
     def maxArea(self, height):
         __import__("atexit").register(lambda: open("display_runtime.txt", "w").write("0"))
+
         l,r = 0,len(height)-1
         ans = 0
-
-        while l<r:
+        while l < r:
             h = min(height[l] , height[r])
             w = r-l
             ans = max(ans,h*w)
@@ -13,7 +13,9 @@ class Solution:
                 l+=1
             else:
                 r-=1
+        
+        return ans
 
-        return ans        
+       
 
        
